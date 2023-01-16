@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:luminouskey_task/constants/sizes.dart';
+import 'package:luminouskey_task/controllers/login_provider.dart';
+import 'package:provider/provider.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
@@ -19,12 +21,18 @@ class HomeAppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ///----Menu Dotted Icon
-              Padding(
-                padding: const EdgeInsets.only(left: 15, right: 15),
-                child: Icon(
-                  Icons.drag_indicator_outlined,
-                  color: Colors.white,
-                  size: Sizes.allSize(context) / 30,
+              InkWell(
+                onTap: () {
+                  Provider.of<LoginProvider>(context, listen: false)
+                      .logOut(context);
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 15, right: 15),
+                  child: Icon(
+                    Icons.drag_indicator_outlined,
+                    color: Colors.white,
+                    size: Sizes.allSize(context) / 30,
+                  ),
                 ),
               ),
 
