@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:luminouskey_task/utils/providers.dart';
 import 'package:luminouskey_task/views/auth_views/login_page.dart';
+import 'package:luminouskey_task/views/auth_views/signup_page.dart';
+import 'package:luminouskey_task/views/landing_views/landing_page.dart';
 import 'package:provider/provider.dart';
 
 class MyApp extends StatelessWidget {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           // fontFamily:
         ),
-        home: const LoginPage(),
+        home: const LandingPage(),
       ),
     );
   }

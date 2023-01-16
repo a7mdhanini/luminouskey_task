@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:luminouskey_task/constants/app_images.dart';
 import 'package:luminouskey_task/constants/sizes.dart';
 import 'package:luminouskey_task/shared/background.dart';
+import 'package:luminouskey_task/views/auth_views/login_page.dart';
 import 'package:luminouskey_task/views/home_views/home_page.dart';
 
 class LandingPage extends StatelessWidget {
@@ -69,7 +70,7 @@ class LandingPage extends StatelessWidget {
               InkWell(
                 onTap: () {
                   Route route =
-                      MaterialPageRoute(builder: (_) => const HomePage());
+                      MaterialPageRoute(builder: (_) => const LoginPage());
                   Navigator.push(context, route);
                 },
                 child: Container(
