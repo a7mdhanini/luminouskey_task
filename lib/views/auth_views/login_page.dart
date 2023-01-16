@@ -6,7 +6,6 @@ import 'package:luminouskey_task/shared/auth_button.dart';
 import 'package:luminouskey_task/shared/auth_text_field.dart';
 import 'package:luminouskey_task/shared/background.dart';
 import 'package:luminouskey_task/views/auth_views/signup_page.dart';
-import 'package:luminouskey_task/views/landing_views/landing_page.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {

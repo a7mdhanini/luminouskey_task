@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:luminouskey_task/constants/app_images.dart';
 import 'package:luminouskey_task/constants/sizes.dart';
 
 class BackGround extends StatelessWidget {

@@ -4,7 +4,6 @@ import 'package:luminouskey_task/constants/app_images.dart';
 import 'package:luminouskey_task/constants/sizes.dart';
 import 'package:luminouskey_task/shared/background.dart';
 import 'package:luminouskey_task/views/auth_views/login_page.dart';
-import 'package:luminouskey_task/views/home_views/home_page.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
